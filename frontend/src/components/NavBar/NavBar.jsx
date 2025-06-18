@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style/Navbar.scss';
+import './style/NavBar.scss';
 import LOGO from '../../utils/nyotalogo';
 import UserProfilePopup from '../UserProfilePopup/UserProfilePopup';
 
