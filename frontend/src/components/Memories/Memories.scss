@@ -1,0 +1,165 @@
+/* Memories.scss */
+.memories-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #3c1500;
+
+  .memories-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .memories-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.7rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #fff;
+        opacity: 0.9;
+        max-width: 800px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.95rem;
+        }
+      }
+    }
+
+    .memories-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .memory-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .video-box {
+          width: 100%;
+          height: 18rem;
+          background: white;
+          border-radius: 1rem;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.2s ease;
+
+          @media (max-width: 768px) {
+            height: 15rem;
+          }
+
+          @media (max-width: 480px) {
+            height: 13rem;
+          }
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          .play-button {
+            width: 4rem;
+            height: 4rem;
+            background-color: #dc2626;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s ease;
+
+            @media (max-width: 480px) {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+
+            .play-icon {
+              color: white;
+              width: 2rem;
+              height: 2rem;
+              margin-left: 0.25rem;
+
+              @media (max-width: 480px) {
+                width: 1.5rem;
+                height: 1.5rem;
+              }
+            }
+
+            &:hover {
+              background-color: #b91c1c;
+            }
+          }
+        }
+
+        .shop-button {
+          margin-top: 1.5rem;
+          padding: 0.75rem 2rem;
+          background-color: #db2777;
+          color: white;
+          font-weight: bold;
+          font-size: 1rem;
+          border-radius: 9999px;
+          cursor: pointer;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          transition: all 0.2s ease;
+
+          @media (max-width: 480px) {
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+          }
+
+          &:hover {
+            background-color: #db2777;
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    .memories-description {
+      text-align: center;
+
+      p {
+        color: white;
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+          font-size: 0.95rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.ourTrending {
+  width: 100%;
+  padding: 3rem 1rem;
+  background-color: #fff;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #92400e;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: 768px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 480px) {
+          font-size: 1.75rem;
+        }
+      }
+
+      p {
+        color: #4b5563;
+        font-size: 1.1rem;
+
+        @media (max-width: 480px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .trending-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 400px) {
+        grid-template-columns: 1fr;
+      }
+
+      .trending-card {
+        aspect-ratio: 1 / 1;
+        border: 2px solid #f472b6;
+        border-radius: 0.75rem;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-placeholder {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+      }
+    }
+
+    .follow-section {
+      text-align: center;
+      margin-bottom: 2.5rem;
+
+      h3 {
+        font-size: 1.25rem;
+        color: #92400e;
+        font-weight: 600;
+        margin-bottom: 1rem;
+
+        @media (max-width: 480px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      .insta-button {
+        background: linear-gradient(to top right, #f59e0b, #db2777, #8b5cf6);
+        padding: 4px;
+        border-radius: 9999px;
+        display: inline-block;
+
+        .icon-bg {
+          background: #fff;
+          border-radius: 9999px;
+          padding: 0.5rem;
+
+          .icon {
+            color: #db2777;
+            width: 2rem;
+            height: 2rem;
+
+            @media (max-width: 480px) {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-banner {
+      background-color: #fffbeb;
+      padding: 2rem;
+
+      .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .banner-side {
+          text-align: center;
+
+          p {
+            font-size: 1.8rem;
+            color: #000000;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+
+            @media (max-width: 768px) {
+              font-size: 1.4rem;
+            }
+
+            @media (max-width: 480px) {
+              font-size: 1.2rem;
+            }
+          }
+
+          button {
+            width: 20rem;
+            background-color: #db2777;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+              background-color: #be185d;
+              box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            @media (max-width: 480px) {
+              width: 100%;
+              font-size: 0.9rem;
+              padding: 0.6rem 1rem;
+            }
+          }
+        }
+
+        .banner-center {
+          text-align: center;
+
+          h3 {
+            font-size: 2.75rem;
+            font-weight: bold;
+            color: #92400e;
+            margin-bottom: 0.5rem;
+
+            @media (max-width: 768px) {
+              font-size: 2rem;
+            }
+
+            @media (max-width: 480px) {
+              font-size: 1.6rem;
+            }
+          }
+
+          .tagline {
+            font-style: italic;
+            color: #92400e;
+            margin-bottom: 0.5rem;
+
+            @media (max-width: 480px) {
+              font-size: 0.95rem;
+            }
+          }
+
+          .highlight {
+            font-weight: 600;
+            color: #92400e;
+
+            @media (max-width: 480px) {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
